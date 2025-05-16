@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Asmita Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ASMITA PORTFOLIO</h1>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="profile-photo">
+  <img src="images/MY PHOTO.png" alt="Asmita Chavan" />
+</div>
+
+  <section id="hero">
+    <h2>Hello, I'm [Asmita chavan]</h2>
+    <p>A Web Developer passionate about clean code and modern design.</p>
+    <button onclick="downloadResume()">Download Resume</button>
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p> I am currently a First Year B.Sc. IT student, progressing into my Second Year at [Your College Name]. Passionate about technology and problem-solving, I am building a strong foundation in programming, web development, and data structures. My goal is to become a skilled software developer, and I am actively working on projects to expand my knowledge and experience in real-world applications.
+</p>
+  </section>
+
+  <section id="Skills">
+    <h2>SKILLS</h2>
+    <div class="section-box">
+      <h3>HTML</h3>
+      <p>I have studied HTML as a core subject in my First Year B.Sc. IT course. I am proficient in creating structured and semantic webpages using modern HTML5 practices.
+ </p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="section-box">
+      <h3>CSS</h3>
+      <p>I have learned CSS during my first year, using it to design attractive and responsive layouts. I understand styling fundamentals including Flexbox, Grid, and media queries.
+</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="section-box">
+      <h3>MS EXCEL</h3>
+      <p> I have a good understanding of Microsoft Excel. I can perform data entry, use formulas, apply formatting, and work with functions like VLOOKUP, COUNTIF, and charts effectively</p>
+      <a href="#">View Project</a></div>
+    <div class="section-box">
+      <h3>STRONG COMMUNICATION</h3>
+      <p>
+I have developed strong communication skills through presentations and team projects. I am confident in expressing my ideas clearly in both written and spoken formats</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="section-box">
+      <h3>PROBLEM SOLVING</h3>
+      <p>I possess strong problem-solving skills developed through academic assignments and personal projects. I enjoy breaking down complex challenges</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+  <div class="social-links">
+  <a href="https://instagram.com/asmita__chavan625" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://t.me/yourusername" target="_blank" title="Telegram">
+    <i class="fab fa-telegram"></i>
+  </a>
+  <a href="https://linkedin.com/in/www.linkedin.com/in/Asmita chavan" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+    <h2>CONTACT ME</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <div Asmita="" chavan=""></div>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  .section-box {
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.section-box.clicked {
+  background-color: #d1e7ff; /* Light blue highlight */
+  transform: scale(1.02);
+}
+</body>
+</html>
